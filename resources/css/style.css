@@ -1,0 +1,434 @@
+/* =============== */
+/*   BASIC SETUP   */
+/* =============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* =========== */
+/*   HEADING   */
+/* =========== */
+
+h1 {
+    font-size: 7.8rem;
+    color: #FFFFFF;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ===================== */
+/*  REUSABLE COMPONENTS  */
+/* ===================== */
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 8rem 0;
+}
+
+/* ===================== */
+/*    HEADER SECTION     */
+/* ===================== */
+
+header {
+    background: linear-gradient(rgba(35, 35, 46, 0.7),rgba(35, 35, 46, 0.9)), url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    position: relative;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
+
+.hero-text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero-prg-box {
+    width: 90%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.hero-prg-box .p1 span {
+    display: block;
+}
+
+.hero-icon-box {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+}
+
+.hero-icon-box a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.material-icons {
+    border: .2rem solid #FFFFFF;
+    font-size: 4rem;
+    border-radius: 50%;
+}
+
+/* ===================== */
+/*   WHAT I DO SECTION   */
+/* ===================== */
+
+.doing-section {
+    text-align: center;
+    
+}
+
+.hero-prg-box2 {
+    font-size: 2.6rem;
+    line-height: 4rem;
+    color: #888a8b;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.p2 span {
+    display: block;
+}
+
+.p2 .s2 {
+    margin-top: 3rem;
+}
+
+.hero-text-box2 {
+    width: 90%;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    color: #464b4f;
+    margin: 6rem auto;
+}
+
+.hero-box-box {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.box {
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 2.5rem;
+    padding: 2rem;
+    
+}
+
+.box h3 {
+    padding-bottom: 2rem;
+    color: #464b4f;
+}
+
+.box p {
+    color: #929394;
+}
+
+/* ===================== */
+/*   TEAM WORK SECTION   */
+/* ===================== */
+
+.team-work {
+    margin: 0 auto;
+    background: #23232e;    
+} 
+
+.my-work {
+    width: 90%;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.menu-bar {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.menu-bar ul {
+    padding: 0;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+}
+
+.menu-bar ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 1.5rem;
+}
+
+.menu-bar ul li a:hover {
+    border-bottom: 2px solid #7b77c9;
+}
+
+.active a{
+   border-bottom: 2px solid #7b77c9; 
+}
+
+.team-work .col:nth-child(4) {
+    margin-left: 0;
+}
+
+.team-container {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.team-box {
+    height: 30rem;
+    width: 30rem;
+    overflow: hidden;
+}
+
+.team-box img {
+    height: auto;
+    width: 100%;
+    margin-top: -4rem;
+    
+}
+
+.team-box h3 {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+}
+
+.team-box .role {
+    display: inline-block;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    color: #818baa;
+}
+
+.team-work-btn .btn {
+    margin: 10rem auto 0;
+    width: 25%;
+    display: block;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #7b77c9;
+    text-align: center;
+    border: .1rem solid #333333;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.team-work-btn .btn:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #7b77c9;
+    transition: 1s;
+}
+
+/* ===================== */
+/*  PHOTOGRAPHY SECTION  */
+/* ===================== */
+
+.photography {
+    margin: 0 auto;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.my-photo {
+    width: 90%;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    margin: 3rem auto;
+    text-align: center;
+    color: #464b4f;
+}
+
+.hero-prg-box3 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #888a8b;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    padding-bottom: 3rem;
+}
+
+.p3 span {
+    display: block;
+}
+
+.photography .col:nth-child(4) {
+    margin-left: 0;
+}
+
+.photography .btn2 {
+    margin: 10rem auto 0;
+    width: 25%;
+    display: block;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #7b77c9;
+    text-align: center;
+    border: .1rem solid #333333;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.photography .btn2:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #7b77c9;
+    transition: 1s;
+}
+
+/* =================== */
+/*  SUBSCRIBE SECTION  */
+/* =================== */
+
+.subscribe {
+    background: #23232e;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-prg-box4 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 5rem;
+}
+
+.p4 span {
+    display: block;
+}
+
+form {
+    padding-top: 5rem;
+}
+
+form input[type="text"] {
+    width: 30%;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: .2rem solid #333333;
+}
+
+form input[type="submit"] {
+    width: 15%;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    background: #7b77c9;
+    color: #FFFFFF;
+    border: .2rem solid #333333;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #7b77c9;
+    transition: 1s; 
+}
+
+/* ================= */
+/*  FOOTER SECTION   */
+/* ================= */
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social-link {
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+.social-link ul li {
+    display: inline-block;
+}
+
+.social-link ul li a:link {
+    display: block;
+    text-decoration: none;
+    color: #dbdbdb;
+    margin-right: 3rem;
+    text-decoration: none;
+}
+
+.social-link ul li a i {
+    color: #dbdbdb;
+}
+
+.hero-prg-box5 {
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #787878;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 5rem;
+}
+
+.p5 span {
+    display: block;
+}
